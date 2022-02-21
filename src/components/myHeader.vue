@@ -1,5 +1,7 @@
 <template>
 <header>
+  <div class="container">
+
   <div class="logo_box">
     <img src="../assets/img/dc-logo.png" >
   </div>
@@ -46,7 +48,10 @@
       </li>
 
     </ul>
+  </div>
+
 </header>  
+
 </template>
 
 <script>
@@ -63,10 +68,12 @@ export default {
   a{
     text-decoration: none;
   }
-  header{
+  .container{
     display: flex;
     height: 120px;
     justify-content: space-between;
+    width: 70%;
+    margin: auto;
     .logo_box{
       
       padding: 20px 0;
@@ -80,8 +87,8 @@ export default {
 
       li{
         list-style: none;
-        margin: 0 15px;
         height: 100%;
+        margin: 0 15px;
         display: flex;
         align-items: center;
           border-bottom: 10px solid transparent;
@@ -90,6 +97,7 @@ export default {
           border-bottom: 10px solid $primaryColor;
           color: $primaryColor;
           transition: 0.3s;
+          cursor: pointer;
         }
         &:hover a{
           color: $primaryColor;
@@ -98,7 +106,6 @@ export default {
         a{
           color: $secondaryColor;
           font-weight: bold;
-
         }
       }
     }

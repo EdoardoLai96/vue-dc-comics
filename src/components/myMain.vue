@@ -1,7 +1,9 @@
 <template>
 <main>
-    <h1>--> Content goes here </h1>
+  <div class="container">
 
+    <h1>--> Content goes here </h1>
+  </div>
 </main>
 </template>
 
@@ -16,9 +18,13 @@ export default {
 
 main{
   background-color: $secondaryColor;
-  padding: 60px 0;
-  h1{
-    color: white;
+  .container{
+    padding: 60px 0;
+    width: 70%;
+    margin: auto;
+      h1{
+        color: white;
+      }
   }
 }
 

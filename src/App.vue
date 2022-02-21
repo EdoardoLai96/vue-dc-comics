@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <mioFooter/>
     <myHeader/>
     <myMain/>
+    <mioFooter/>
   </div>
 </template>
 
@@ -28,8 +28,6 @@ export default {
 
 @import "./assets/style/general.scss";
 #app {
-  width: 70%;
-  margin: auto;
   font-family: sans-serif;
 }
 </style>
