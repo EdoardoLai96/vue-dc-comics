@@ -8,7 +8,7 @@
     <div class="footer_dx">
       <h3>FOLLOW US</h3>
       <div class="icon_box" v-for = "(icon, index) in icons" :key="index">
-        <img :src= icon>
+        <img :src = icon>
       </div>
     </div>
   </section>
@@ -21,11 +21,11 @@ export default {
   data(){
     return{
       icons: [
-        "../assets/img/footer-facebook.png",
-        "../assets/img/footer-twitter.png",
-        "../assets/img/footer-youtube.png",
-        "../assets/img/footer-pinterest.png",
-        "../assets/img/footer-periscope.png",
+        "/icons/footer-facebook.png",
+        "/icons/footer-twitter.png",
+        "/icons/footer-youtube.png",
+        "/icons/footer-pinterest.png",
+        "/icons/footer-periscope.png",
       ]
     }
   }
