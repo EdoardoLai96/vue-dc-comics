@@ -2,24 +2,27 @@
   <div id="app">
     <myHeader/>
     <myMain/>
-    <mioFooter/>
+    <myFooterTop/>
+    <myFooterMidSecondo/>
+    <myFooterBottom/>
   </div>
 </template>
 
 <script>
 import myHeader from './components/myHeader.vue'
 import myMain from './components/myMain.vue'
-import mioFooter from './components/mioFooter.vue'
-
-
-
+import myFooterTop from './components/myFooterTop.vue'
+import myFooterMidSecondo from './components/myFooterMidSecondo.vue'
+import myFooterBottom from './components/myFooterBottom.vue'
 
 export default {
   name: 'App',
   components: {
     myHeader,
     myMain,
-    mioFooter,
+    myFooterBottom,
+    myFooterTop,
+    myFooterMidSecondo,
   }
 }
 </script>

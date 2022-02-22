@@ -10,6 +10,12 @@
 <script>
 export default {
   name: 'myMain',
+    data (){
+    return{
+      
+    }
+  }
+
 }
 </script>
 

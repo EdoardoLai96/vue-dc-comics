@@ -1,64 +1,37 @@
 <template>
-<header>
-  <div class="container">
 
+<header>
   <div class="logo_box">
     <img src="../assets/img/dc-logo.png" >
   </div>
-
     <ul class="nav">
-      <li> 
-        <a href="">CHARACTERS</a> 
+      <li v-for = "(nav_item, index) in nav_items" :key="index">
+        <a href="">{{nav_item}}</a>
       </li>
-
-      <li> 
-        <a href="">COMICS</a> 
-      </li>
-
-      <li> 
-        <a href="">MOVIES</a> 
-      </li>
-
-      <li> 
-        <a href="">TV</a> 
-      </li>
-
-      <li> 
-        <a href="">GAMES</a> 
-      </li>
-
-      <li> 
-        <a href="">COLLECTIBLES</a> 
-      </li>
-
-      <li> 
-        <a href="">VIDEOS</a> 
-      </li>
-
-      <li> 
-        <a href="">FANS</a> 
-      </li>
-
-      <li> 
-        <a href="">NEWS</a> 
-      </li>
-
-      <li> 
-        <a href="">SHOP</a> 
-      </li>
-
     </ul>
-  </div>
-
 </header>  
 
 </template>
 
 <script>
-
-
 export default {
   name: 'myHeader',
+  data (){
+    return{
+      nav_items: [
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
+        "TV",
+        "GAMES",
+        "COLLECTIBLES",
+        "VIDEOS",
+        "FANS",
+        "NEWS",
+        "SHOP",
+      ]
+    }
+  }
 }
 </script>
 
@@ -68,12 +41,10 @@ export default {
   a{
     text-decoration: none;
   }
-  .container{
+  header{
     display: flex;
-    height: 120px;
     justify-content: space-between;
-    width: 70%;
-    margin: auto;
+    padding: 0 15%;
     .logo_box{
       
       padding: 20px 0;
@@ -109,5 +80,5 @@ export default {
         }
       }
     }
-  }
+    }
 </style>
